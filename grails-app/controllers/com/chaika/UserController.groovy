@@ -7,6 +7,7 @@ class UserController {
 
     def save() {
         def user = new User(params)
+        user.getClos().call(params)
         user.save()
         render(view: 'user', model: [user: user])
     }

@@ -7,4 +7,6 @@ class User {
 
     String firstName
     String lastName
+
+    def clos = { println("User created with params ${it}") }
 }
